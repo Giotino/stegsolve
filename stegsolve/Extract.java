@@ -478,7 +478,7 @@ public class Extract extends javax.swing.JFrame {
         cancelButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(720, 560));
+        setMinimumSize(new java.awt.Dimension(790, 560));
         getContentPane().setLayout(new java.awt.BorderLayout(5, 5));
 
         optionsPanel.setMinimumSize(new java.awt.Dimension(720, 280));
@@ -488,13 +488,14 @@ public class Extract extends javax.swing.JFrame {
         lhSettingsPanel.setMinimumSize(new java.awt.Dimension(360, 280));
         lhSettingsPanel.setPreferredSize(new java.awt.Dimension(360, 280));
 
-        bitPlanesPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Bit Planes"));
-        bitPlanesPanel.setMinimumSize(new java.awt.Dimension(400, 200));
-        bitPlanesPanel.setPreferredSize(new java.awt.Dimension(400, 200));
+        int bitPlanesWidth = 480;
 
-        alphaBitPanel.setMinimumSize(new java.awt.Dimension(100, 33));
+        bitPlanesPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Bit Planes"));
+        bitPlanesPanel.setMinimumSize(new java.awt.Dimension(bitPlanesWidth, 200));
+        bitPlanesPanel.setPreferredSize(new java.awt.Dimension(bitPlanesWidth, 200));
+
         alphaBitPanel.setName("alphaBitPanel"); // NOI18N
-        alphaBitPanel.setPreferredSize(new java.awt.Dimension(390, 34));
+        alphaBitPanel.setPreferredSize(new java.awt.Dimension(bitPlanesWidth-10, 34));
 
         alphaLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         alphaLabel.setText("Alpha");
@@ -536,8 +537,7 @@ public class Extract extends javax.swing.JFrame {
         bitPlanesPanel.add(alphaBitPanel);
         alphaBitPanel.getAccessibleContext().setAccessibleName("alphaBitPanel");
 
-        redBitPanel.setMinimumSize(new java.awt.Dimension(100, 33));
-        redBitPanel.setPreferredSize(new java.awt.Dimension(390, 34));
+        redBitPanel.setPreferredSize(new java.awt.Dimension(bitPlanesWidth-10, 34));
 
         redLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         redLabel.setText("Red");
@@ -578,8 +578,7 @@ public class Extract extends javax.swing.JFrame {
 
         bitPlanesPanel.add(redBitPanel);
 
-        greenBitPanel.setMinimumSize(new java.awt.Dimension(100, 33));
-        greenBitPanel.setPreferredSize(new java.awt.Dimension(390, 34));
+        greenBitPanel.setPreferredSize(new java.awt.Dimension(bitPlanesWidth-10, 34));
 
         greenLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         greenLabel.setText("Green");
@@ -620,8 +619,7 @@ public class Extract extends javax.swing.JFrame {
 
         bitPlanesPanel.add(greenBitPanel);
 
-        blueBitPanel.setMinimumSize(new java.awt.Dimension(100, 33));
-        blueBitPanel.setPreferredSize(new java.awt.Dimension(390, 34));
+        blueBitPanel.setPreferredSize(new java.awt.Dimension(bitPlanesWidth-10, 34));
 
         blueLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         blueLabel.setText("Blue");
@@ -684,8 +682,7 @@ public class Extract extends javax.swing.JFrame {
         rhSettingsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 5));
 
         orderSettingsPanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Order settings"));
-        orderSettingsPanel.setMinimumSize(new java.awt.Dimension(300, 260));
-        orderSettingsPanel.setPreferredSize(new java.awt.Dimension(300, 260));
+        orderSettingsPanel.setPreferredSize(new java.awt.Dimension(280, 260));
         orderSettingsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         extractByLabel.setText("Extract By");
@@ -702,7 +699,7 @@ public class Extract extends javax.swing.JFrame {
 
         orderSettingsPanel.add(extractByPanel);
 
-        bitOrderPanel.setPreferredSize(new java.awt.Dimension(240, 41));
+        bitOrderPanel.setPreferredSize(new java.awt.Dimension(250, 41));
         bitOrderPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         bitOrderLabel.setText("Bit Order");
@@ -719,7 +716,7 @@ public class Extract extends javax.swing.JFrame {
 
         orderSettingsPanel.add(bitOrderPanel);
 
-        bitPlaneOrderPanel.setPreferredSize(new java.awt.Dimension(200, 120));
+        bitPlaneOrderPanel.setPreferredSize(new java.awt.Dimension(250, 130));
 
         bitPlaneOrderLabel.setText("Bit Plane Order");
 

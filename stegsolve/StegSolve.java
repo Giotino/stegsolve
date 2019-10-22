@@ -6,8 +6,6 @@
 
 package stegsolve;
 
-import sun.plugin2.main.server.ServerPrintHelper;
-
 import javax.swing.*;
 import javax.swing.border.Border;
 import javax.swing.event.ChangeEvent;
