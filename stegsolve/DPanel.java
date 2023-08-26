@@ -70,6 +70,15 @@ public class DPanel extends JPanel
         return preferredSize;
     }
 
+    @Override
+    public void setSize(int width, int height) {
+        super.setSize(width, height);
+
+        currentSize.width = width;
+        currentSize.height = height;
+        preferredSize = currentSize;
+    }
+
     public void apply(int percent) {
         currentSize.width = (int)(defaultSize.width * (((float)percent)/100));
         currentSize.height = (int)(defaultSize.height * (((float)percent)/100));
